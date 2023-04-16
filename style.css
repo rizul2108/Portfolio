@@ -1,0 +1,499 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+scroll-behavior: smooth;
+
+}
+.home{
+    height:100vh;
+}
+body {
+    font-family: montserrat;
+    padding:10px;
+    background: rgb(246,199,240);
+    background: radial-gradient(circle, rgba(246,199,240,1) 0%, rgba(177,224,250,1) 100%);
+}
+
+nav {
+    height: 190px;
+    width: 100%;
+
+}
+
+label.logo {
+    font-size: 35px;
+    line-height: 80px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    font-size: 35px;
+    color: #000;
+}
+
+a.active,
+a:hover {
+    color: blue;
+    transition: .5s;
+
+}
+
+.checkbtn {
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width:952px) {
+    label.logo {
+        font-size: 30px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+
+    }
+}
+
+@media (max-width:858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: 0;
+        text-align: center;
+        left: -100%;
+        transition: all .5s;
+        z-index: 10;
+        background-color:white ;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: blue;
+    }
+
+    #check:checked~ul {
+        left: 0;
+
+    }
+}
+
+div {
+    display: inline-block;
+}
+
+.images {
+    position: relative;
+    width: auto;
+}
+
+.animated-blob-image {
+    border-radius: 23% 31% 30% 67% / 72% 47% 40% 26%;
+    width: 450px;
+    height: auto;
+    background: #f1b0f9;
+    opacity:0.65;
+    overflow: hidden;
+    box-shadow: 0.9px 0.9px 0.9x 0.9px rgba(0,0,0,0.6);
+    animation: animateImg 8s linear infinite;
+    margin: 50px;
+    width: 350px;
+    height: 400px;
+    display: inline-block;
+    margin: auto;
+}
+
+.images .img {
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+@keyframes animateImg {
+
+    0%,
+    100% {
+        border-radius: 69% 31% 30% 67% / 72% 47% 40% 26%;
+    }
+
+    34% {
+        border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+    }
+
+    67% {
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    }
+}
+
+.myInfo {
+    width: auto;
+    word-wrap: normal;
+    margin-right: 8%;
+    margin-top: 15%;
+    position: relative;
+
+}
+.links{
+    position: absolute;
+    left:50%;
+    margin: 20px;
+    padding: 5px;
+}
+
+.about {
+    display: inline-flex;
+
+}
+
+.about .static-text {
+    font-size: 60px;
+    font-weight: 400;
+    width: auto;
+}
+
+.container {
+    display: inline-block;
+}
+
+.about .dynamic-text {
+    margin: 0 7px;
+    font-size: 60px;
+    width: 100%;
+    border-right: 5px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 4s steps(12) infinite,
+        cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+/* .background {
+    width: 1005px;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+ */
+.back {
+    width: 100%;
+    padding: 35px 10%;
+}
+.background h2{
+    font-size: 45px;
+}
+main.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+
+}
+
+.col .contents {
+    padding: 0px 30px;
+    border-left: 2px solid;
+
+}
+
+.col header.title {
+    padding: 0px 0px 20px 30px;
+}
+
+.col .contents .box {
+    position: relative;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    background: #f1b0f9;
+    cursor: pointer;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+
+.col .contents .box:hover {
+    box-shadow: 0px 3px 12px 0px ;
+    border: 1px solid transparent;
+}
+
+.col .contents .box::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 22px);
+    top: 0;
+    background: #000;
+    border: 2px solid white;
+}
+
+.box h4 {
+    position: relative;
+}
+
+.box h3 {
+    font-size: 19px;
+    padding: 10px 0px 6px;
+}
+
+.box p {
+    line-height: 1.2;
+    font-size: 17px;
+}
+
+@media (max-width:768px) {
+    main.row {
+        grid-template-columns: 1fr;
+    }
+
+    .row .col :nth-child(2) {
+        margin-top: 30px;
+
+    }
+}
+.cssFont_1 {
+    font-family: 'Dancing Script', cursive;
+    font-size:65px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+margin-left: 50px;
+margin-right: 50px;
+    }
+.skills {
+    display: flex;
+    height: 100%;
+    place-items: center;
+  }
+  ::selection{
+    color: #fff;
+    background: rgb(126,20,113);
+    background: radial-gradient(circle, rgba(126,20,113,1) 0%, rgba(53,80,251,1) 100%);
+      }
+.skills-bar {
+    width: 45%;
+    padding: 25px 30px;
+    /* box-shadow: 5px 5px 10px rgba(0,0,0,0.2); */
+    border-radius: 10px;
+    display:grid;
+    grid-template-areas:
+    "a a a a b b b b"
+    "a a a a b b b b"
+    "c c c c d d d d"
+    "c c c c d d d d"
+    "e e e e f f f f"
+    "e e e e f f f f"
+    "g g g g h h h h"
+    "g g g g h h h h";
+  align-items: center;
+  gap:20%;
+margin:100px;
+}
+.cbar{
+    grid-area: a;
+}
+.jbar{
+    grid-area: b;
+}
+.hbar{
+    grid-area: c;
+}
+.cssbar{
+    grid-area: d;
+}
+.jsbar{
+    grid-area: e;
+}
+.reactbar{
+    grid-area: f;
+}
+.nodebar{
+    grid-area: g;
+}
+.expressbar{
+    grid-area: h;
+}
+.skill-bars .bar{
+    margin: 20px 0;
+  }
+.skills-bar .bar:first-child {
+    margin-top: 0px;
+}
+
+.skills-bar.bar .info {
+    margin-bottom: 5px;
+}
+.skills-bar .bar .info span {
+    font-size: 25px;
+    font-weight: 500;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+    100%{
+      opacity: 1;
+    }
+  }
+.skills-bar .bar .progress-line {
+    height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+              0 1px rgba(255,255,255,0.8);
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.bar .progress-line span {
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    -origin: left;
+    background: rgb(14,77,158);
+background: linear-gradient(90deg, rgba(14,77,158,1) 0%, rgba(144,13,160,1) 51%, rgba(14,77,158,1) 100%);
+        animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.bar .progress-line span::before {
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+.bar .progress-line span::after {
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-weight: 500;
+    background: #000;
+    color: #fff;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+    100%{
+      opacity: 1;
+    }
+  }
+
+.progress-line.c span::after{
+    content:"80%";
+}
+.progress-line.java span::after{
+    content:"75%";
+}
+.progress-line.html span::after{
+    content:"80%";
+}
+.progress-line.css span::after{
+    content:"65%";
+}
+.progress-line.js span::after{
+    content:"70%";
+}
+.progress-line.react span::after{
+    content:"80%";
+}
+.progress-line.node span::after{
+    content:"80%";
+}
+.progress-line.express span::after{
+    content:"50%";
+}
+
+.bar .progress-line.c span{
+    width:80%;
+}
+.bar .progress-line.java span{
+    width:75%;
+}
+.bar .progress-line.html span{
+    width:80%;
+}
+.bar .progress-line.css span{
+    width:65%;
+}
+.bar .progress-line.js span{
+    width:70%;
+}
+.bar .progress-line.react span{
+    width:80%;
+}
+.bar .progress-line.node span{
+    width:80%;
+}
+.bar .progress-line.express span{
+    width:50%;
+}
+
