@@ -34,20 +34,22 @@ nav ul {
     margin-right: 20px;
 
 }
-
+#aboutme{
+    font-size: 20px;
+}
 nav ul li {
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
-    font-size: 35px;
-    color: #000;
+    font-size: 25px;
+    color: black;
 }
 
-a.active,
-a:hover {
-    color: blue;
-    transition: .5s;
 
+a:hover {
+    transition: .5s;
+    color:#000;
+    font-weight: 1200;
 }
 
 .checkbtn {
@@ -89,7 +91,9 @@ a:hover {
         left: -100%;
         transition: all .5s;
         z-index: 10;
-        background-color:white ;
+        background-color: rgb(246,199,240);
+        background: radial-gradient(circle, rgba(246,199,240,1) 0%, rgba(177,224,250,1) 100%);
+    
     }
 
     nav ul li {
@@ -102,11 +106,13 @@ a:hover {
     nav ul li a {
         font-size: 20px;
     }
+    nav ul li a.click~ul{
+        left: 0;
 
+    }
     a:hover,
     a.active {
         background: none;
-        color: blue;
     }
 
     #check:checked~ul {
@@ -227,6 +233,7 @@ div {
 .back {
     width: 100%;
     padding: 35px 10%;
+    margin:15px;
 }
 .background h2{
     font-size: 45px;
@@ -496,4 +503,103 @@ background: linear-gradient(90deg, rgba(14,77,158,1) 0%, rgba(144,13,160,1) 51%,
 .bar .progress-line.express span{
     width:50%;
 }
+#projects{
+    display: flex;
+}
+.projects{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    max-width:1200px;
+    z-index:1;
+    flex-wrap: wrap;
+    margin-left:15px;
+}
+.projects .card{
+    position: relative;
+    width: 280px;
+    height:400px;
+    margin:30px;
+    box-shadow:20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.5) ;
+    border-left: 1px solid rgba(255,255,255,0.5) ;
+    backdrop-filter: blur(5px);
+}
+.projects .card .content{
+    padding:20px;
+    text-align: center;
+    transition: 0.5s;
+    /* opacity:0;
+    transform: translateY(100px);    */
+}
+/* .projects .card:hover .content{
+    transform: translateY(0px);
+    opacity:1;
+} */
+.projects .card:hover{
+    transition:1s;
+    transform: translateY(-30px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+.projects .card .content h2{
+    position: absolute;
+    top:-20px;
+    right:30px;
+    font-size:5em;
+    color:rgba(255, 255, 255, 5);
+    pointer-events:none;
+}
+.projects .card .content h3{
+    font-size: 1.8em;
+    z-index: 1;
+}
 
+.projects .card .content p{
+    font-size:1em;
+    font-weight: 300;
+
+}
+.projects .card .content a{
+    position: relative;
+    display: inline-block;
+    padding:8px 20px;
+    margin-top: 15px;
+    background-color:#f1b0f9 ;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+
+
+}
+.cssFont_2 {
+    font-family: 'Dancing Script', cursive;
+    font-size:65px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+margin-right: 50px;
+align-content: center;
+display: inline-block;
+    }
+#skills{
+    height:90vh;
+}
+#projects{
+    height:90vh;
+}
+#background{
+    height:90vh;
+}
