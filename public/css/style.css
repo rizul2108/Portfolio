@@ -149,7 +149,7 @@ div {
     left: 50%;
     position: absolute;
     transform: translateX(-50%);
-    height: 450px;
+    height: 100%;
     margin: auto;
     padding: auto;
 
@@ -174,7 +174,7 @@ div {
 .myInfo {
     width: auto;
     word-wrap: normal;
-    
+    margin-top: 10px;
     position: relative;
 
 }
@@ -232,9 +232,6 @@ div {
     margin: 15px;
 }
 
-.background h2 {
-    font-size: 45px;
-}
 
 main.row {
     display: grid;
