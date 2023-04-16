@@ -185,7 +185,7 @@ div {
 
 .about {
     display: inline-flex;
-
+    align-items: center;
 }
 
 .about .static-text {
