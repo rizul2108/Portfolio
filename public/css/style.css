@@ -88,7 +88,7 @@ a:hover {
         width: 100vw;
         height: 100vh;
         top: 80px;
-        left: -10;
+        left: 0;
         text-align: center;
         left: -100%;
         transition: all .5s;
@@ -115,7 +115,7 @@ a:hover {
     }
 
     #check:checked~ul {
-        left: -10;
+        left: 0;
 
     }
 }
