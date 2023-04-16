@@ -36,7 +36,8 @@ nav ul {
 }
 
 #aboutme {
-    font-size: 20px;
+    font-size: 1em;
+    word-wrap: break-word;
 }
 
 nav ul li {
