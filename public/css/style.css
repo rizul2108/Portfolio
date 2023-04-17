@@ -55,19 +55,6 @@ a:hover {
     font-weight: 1200;
 }
 
-.checkbtn {
-    font-size: 30px;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-
-#check {
-    display: none;
-}
-
 @media (max-width:952px) {
     label.logo {
         font-size: 30px;
@@ -80,56 +67,9 @@ a:hover {
 }
 
 @media (max-width:858px) {
-    .checkbtn {
-        display: block;
-    }
-    ul{
-        position:sticky;
-    }
     ul {
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
-        top: 80px;
-        text-align: center;
-        left: -100%;
-        transition: all .5s;
-        z-index: 10;
-        background-color: rgb(246, 199, 240);
-        background: radial-gradient(circle, rgba(246, 199, 240, 1) 0%, rgba(177, 224, 250, 1) 100%);
-
-    }
-
-    nav ul li {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-
-    }
-    #background:target~ul{
-        left:-100%;
-    }
-    #home:target~ul{
-        left:-100%;
-    }
-    #skills:target~ul{
-        left:-100%;
-    }
-    #projects:target~ul{
-        left:-100%;
-    }
-    nav ul li a {
-        font-size: 20px;
-    }
-
-    a:hover,
-    a.active {
-        background: none;
-    }
-
-    #check:checked~ul {
-        left: 0;
-
+       
+        display: none;
     }
 }
 
@@ -166,6 +106,9 @@ div {
     margin: auto;
     padding: auto;
 
+}
+.navbar{
+    position: sticky;
 }
 @keyframes animateImg {
 
