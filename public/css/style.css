@@ -20,6 +20,8 @@ body {
 nav {
     height: 190px;
     width: 100%;
+    margin: auto;
+    align-content:center;
 
 }
 
@@ -36,8 +38,8 @@ nav ul {
 }
 
 #aboutme {
-    font-size: 1em;
-    word-wrap: break-word;
+    font-size: 1.5em;
+    overflow-wrap: break-word;
 }
 
 nav ul li {
@@ -149,15 +151,18 @@ div {
     flex-wrap: wrap;
 }
 
+
+
+.container {
+    display: inline-block;
+}
+
 .about .static-text {
     font-size: 4em;
     font-weight: 400;
     width: auto;
 }
 
-.container {
-    display: inline-block;
-}
 
 .about .dynamic-text {
     margin: 0 7px;
@@ -168,6 +173,17 @@ div {
     overflow: hidden;
     animation:
         typing 4s steps(11) infinite,
+        cursor .4s step-end infinite alternate;
+}
+.about .dynamic-text {
+    margin: 0 7px;
+    font-size: 4em;
+    width: 105%;
+    border-right: 5px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 4s steps(16) infinite,
         cursor .4s step-end infinite alternate;
 }
 
@@ -511,10 +527,10 @@ main.row {
     position: absolute;
     top: -20px;
     right: 30px;
-    font-size: 5em;
+    font-size: 4.5em;
     color: rgba(255, 255, 255, 5);
     pointer-events: none;
-    margin: 4.5px;
+    margin: 15px;
 }
 
 .projects .card .content h3 {
