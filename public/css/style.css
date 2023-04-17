@@ -381,21 +381,21 @@ main.row {
 .bar .progress-line span::before {
     position: absolute;
     content: "";
-    top: -10px;
+    bottom: -10px;
     right: 0;
     height: 0;
     width: 0;
     border: 7px solid transparent;
-    border-bottom-width: 0px;
+    border-top-width: 0px;
     border-right-width: 0px;
-    border-top-color: #000;
+    border-bottom-color: #000;
     opacity: 0;
     animation: showText2 0.5s 1.5s linear forwards;
 }
 
 .bar .progress-line span::after {
     position: absolute;
-    top: -28px;
+    bottom: -28px;
     right: 0;
     font-weight: 500;
     background: #000;
