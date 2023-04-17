@@ -83,7 +83,9 @@ a:hover {
     .checkbtn {
         display: block;
     }
-
+    ul{
+        position:sticky;
+    }
     ul {
         position: fixed;
         width: 100vw;
@@ -192,7 +194,7 @@ div {
 .links {
     position: absolute;
     left: 25vw;
-    margin: 20px;
+    margin: 25px;
     padding: 5px;
     display: flex;
     flex-wrap: wrap;
@@ -570,6 +572,7 @@ main.row {
     font-size: 5em;
     color: rgba(255, 255, 255, 5);
     pointer-events: none;
+    margin: 4.5px;
 }
 
 .projects .card .content h3 {
@@ -608,7 +611,6 @@ main.row {
     font-style: normal;
     font-variant: normal;
     text-transform: none;
-    margin-right: 3.5rem;
     display: inline-block;
     margin-left: 2.2vw;
 }
