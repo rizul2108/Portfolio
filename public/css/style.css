@@ -89,7 +89,6 @@ a:hover {
         width: 100vw;
         height: 100vh;
         top: 80px;
-        left: 0;
         text-align: center;
         left: -100%;
         transition: all .5s;
@@ -105,7 +104,18 @@ a:hover {
         line-height: 30px;
 
     }
-
+    #background:target~ul{
+        left:-100%;
+    }
+    #home:target~ul{
+        left:-100%;
+    }
+    #skills:target~ul{
+        left:-100%;
+    }
+    #projects:target~ul{
+        left:-100%;
+    }
     nav ul li a {
         font-size: 20px;
     }
@@ -185,6 +195,8 @@ div {
     left: 50%;
     margin: 20px;
     padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .about {
