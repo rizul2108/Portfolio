@@ -140,7 +140,6 @@ div {
     margin: 25px;
     padding: 5px;
     display: flex;
-    flex-wrap: wrap;
     gap :3vw;
 }
 
@@ -163,12 +162,12 @@ div {
 .about .dynamic-text {
     margin: 0 7px;
     font-size: 4em;
-    width: 100%;
+    width: 105%;
     border-right: 5px solid;
     white-space: nowrap;
     overflow: hidden;
     animation:
-        typing 4s steps(12) infinite,
+        typing 4s steps(11) infinite,
         cursor .4s step-end infinite alternate;
 }
 
