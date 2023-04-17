@@ -165,7 +165,6 @@ div {
     padding: auto;
 
 }
-
 @keyframes animateImg {
 
     0%,
@@ -192,11 +191,12 @@ div {
 
 .links {
     position: absolute;
-    left: 50%;
+    left: 25vw;
     margin: 20px;
     padding: 5px;
     display: flex;
     flex-wrap: wrap;
+    gap :3vw;
 }
 
 .about {
@@ -242,7 +242,7 @@ div {
 .back {
     width: 100%;
     padding: 35px 10%;
-    margin: 15px;
+    margin: 30px;
 }
 
 
