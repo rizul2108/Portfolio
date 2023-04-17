@@ -326,7 +326,7 @@ main.row {
     font-style: normal;
     font-variant: normal;
     text-transform: none;
-    margin-left: 50px;
+    margin-left: 2.2vw;
     margin-right: 50px;
 }
 
@@ -609,8 +609,8 @@ main.row {
     font-variant: normal;
     text-transform: none;
     margin-right: 3.5rem;
-    align-content: center;
     display: inline-block;
+    margin-left: 2.2vw;
 }
 
 
