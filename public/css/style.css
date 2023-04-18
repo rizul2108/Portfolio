@@ -216,7 +216,6 @@ main.row {
 .col .contents {
     padding: 0px 30px;
     border-left: 2px solid;
-
 }
 
 .col header.title {
@@ -303,6 +302,7 @@ main.row {
 }
 
 .skills-bar {
+    margin-left:40px;
     height:500px;
     padding: 25px 30px;
     border-radius: 10px;
@@ -310,7 +310,9 @@ main.row {
   grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
     align-items: center;
     gap: 20%;
-    margin: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 #mainpage{
     display: flex;
